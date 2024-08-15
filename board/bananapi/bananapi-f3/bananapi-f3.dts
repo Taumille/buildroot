@@ -1,0 +1,15 @@
+/dts-v1/;
+
+#include "spacemit/k1-x_mingo.dts"
+
+&hdmi_sspa {
+	status = "disabled";
+};
+
+&sound_hdmi {
+	status = "disabled";
+};
+
+&sound_codec {
+	status = "disabled";
+};

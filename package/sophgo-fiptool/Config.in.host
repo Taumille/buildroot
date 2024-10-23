@@ -1,0 +1,20 @@
+config BR2_PACKAGE_HOST_SOPHGO_FIPTOOL
+	bool "host sophgo-fiptool"
+	depends on BR2_riscv
+	depends on BR2_TARGET_UBOOT_FORMAT_BIN
+	help
+	  Generate the Firmware Image Package based on Sophgo software.
+
+	  https://github.com/sophgo/fiptool
+
+if BR2_PACKAGE_HOST_SOPHGO_FIPTOOL
+choice
+prompt "Sophgo SoC family"
+config BR2_PACKAGE_HOST_SOPHGO_FIPTOOL_CV180X
+	bool "Sophgo CV180X"
+
+config BR2_PACKAGE_HOST_SOPHGO_FIPTOOL_CV181X
+	bool "Sophgo CV181X/SG200X"
+
+endchoice
+endif

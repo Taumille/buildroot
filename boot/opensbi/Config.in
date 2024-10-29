@@ -111,7 +111,8 @@ config BR2_TARGET_OPENSBI_UBOOT_PAYLOAD
 
 config BR2_TARGET_OPENSBI_FW_FDT_PATH
 	bool "Include U-Boot DTB in OpenSBI Payload"
-	depends on BR2_TARGET_OPENSBI_UBOOT_PAYLOAD
+	depends on BR2_TARGET_OPENSBI_PLAT != ""
+	depends on BR2_TARGET_UBOOT
 	select BR2_TARGET_UBOOT_FORMAT_DTB
 	help
 	  Build OpenSBI with FW_FDT_PATH set to

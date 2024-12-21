@@ -1,0 +1,10 @@
+config BR2_PACKAGE_LIBPLACEBO
+	bool "libplacebo"
+	select BR2_PACKAGE_LCMS2
+	select BR2_PACKAGE_PYTHON_GLAD2
+	select BR2_PACKAGE_VULKAN_HEADERS
+	help
+	  Core rendering algorithms and ideas of mpv rewritten as an
+	  independent library.
+
+	  https://code.videolan.org/videolan/libplacebo

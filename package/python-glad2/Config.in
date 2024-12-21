@@ -1,0 +1,8 @@
+config BR2_PACKAGE_PYTHON_GLAD2
+	bool "python-glad2"
+	select BR2_PACKAGE_PYTHON_JINJA2
+	help
+	  Multi-Language Vulkan/GL/GLES/EGL/GLX/WGL Loader-Generator based on
+	  the official specs.
+
+	  https://github.com/Dav1dde/glad

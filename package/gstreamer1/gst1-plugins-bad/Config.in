@@ -652,6 +652,7 @@ config BR2_PACKAGE_GST1_PLUGINS_BAD_PLUGIN_WAYLAND
 config BR2_PACKAGE_GST1_PLUGINS_BAD_PLUGIN_WEBP
 	bool "webp"
 	select BR2_PACKAGE_WEBP
+	select BR2_PACKAGE_WEBP_MUX
 	help
 	  Webp image format plugin
 

@@ -4,7 +4,7 @@
 #
 ################################################################################
 
-GST1_PLUGINS_BAD_VERSION = 1.22.12
+GST1_PLUGINS_BAD_VERSION = 1.24.11
 GST1_PLUGINS_BAD_SOURCE = gst-plugins-bad-$(GST1_PLUGINS_BAD_VERSION).tar.xz
 GST1_PLUGINS_BAD_SITE = https://gstreamer.freedesktop.org/src/gst-plugins-bad
 GST1_PLUGINS_BAD_INSTALL_STAGING = YES
@@ -49,7 +49,6 @@ GST1_PLUGINS_BAD_CONF_OPTS += \
 	-Dflite=disabled \
 	-Dgs=disabled \
 	-Dgsm=disabled \
-	-Dkate=disabled \
 	-Dladspa=disabled \
 	-Dldac=disabled \
 	-Dlv2=disabled \

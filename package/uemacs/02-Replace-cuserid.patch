@@ -1,15 +1,15 @@
-From 289ccf8f0e77ae4f240eca988eb3a6ac19afbae9 Mon Sep 17 00:00:00 2001
+From c1906694674b9223f1ff1a3ac80f905aefb0b800 Mon Sep 17 00:00:00 2001
 From: Thomas Bonnefille <thomas.bonnefille@bootlin.com>
 Date: Fri, 17 Jan 2025 22:10:41 +0100
 Subject: [PATCH] Replace cuserid
 
-cuserid has been removed from some toolchains and is no longer in the
-POSIX standard since 1990. getlogin has been in the standard since 2001.
+cuserid has been removed from some toolchains and isn't in the POSIX
+standard anymore since 1990. getlogin has been in the standard since
+2001.
 
-This commit uncomments the call to getlogin and thus replaces cuserid
-with getlogin.
+This commit uncomment the call to getlogin and so replace cuserid with
+getlogin.
 
-Upstream: https://github.com/torvalds/uemacs/pull/46
 Signed-off-by: Thomas Bonnefille <thomas.bonnefille@bootlin.com>
 ---
  pklock.c | 3 +--

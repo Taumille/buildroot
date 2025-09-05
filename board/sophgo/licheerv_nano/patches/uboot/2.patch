@@ -1,0 +1,26 @@
+From b6dcd2be7c6fe9c3b29fd1fc1c22ba8dd47e6c1c Mon Sep 17 00:00:00 2001
+From: Thomas Bonnefille <thomas.bonnefille@bootlin.com>
+Date: Fri, 5 Sep 2025 19:17:15 +0200
+Subject: [PATCH] 2
+
+Signed-off-by: Thomas Bonnefille <thomas.bonnefille@bootlin.com>
+---
+ include/command.h | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/include/command.h b/include/command.h
+index 137cfbc3231..8981c60a3cc 100644
+--- a/include/command.h
++++ b/include/command.h
+@@ -231,7 +231,7 @@ enum command_ret_t {
+  *			number of ticks the command took to complete.
+  * @return 0 if the command succeeded, 1 if it failed
+  */
+-int cmd_process(int flag, int argc, char *const argv[], int *repeatable,
++enum command_ret_t cmd_process(int flag, int argc, char *const argv[], int *repeatable,
+ 		unsigned long *ticks);
+ 
+ void fixup_cmdtable(struct cmd_tbl *cmdtp, int size);
+-- 
+2.51.0
+
